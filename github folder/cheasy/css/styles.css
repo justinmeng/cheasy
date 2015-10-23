@@ -1,0 +1,74 @@
+.container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+ }
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #FF9900 !important;
+}
+
+
+
+
+
+.background-1 {
+	background-color: #ffffff;
+}
+
+.background-2 {
+	background-color: #E65C00;
+	color: #ffffff;
+}
+
+.background-3 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+
+
+
+
+
+#recipe-search{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    /*width: 300px;*/
+}
+
+#recipe-search input{
+    border: 0;
+    box-shadow: none;
+}
+
+#recipe-search button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#recipe-search button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#recipe-search .glyphicon-search{
+    font-size: 23px;
+}
