@@ -6,11 +6,6 @@
 		<title>Cheasy</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap_united.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-			
-		<script type="text/javascript" src="/jquery/custom.js"></script>	
 	</head>
 
 	<body>
@@ -45,12 +40,12 @@
             <div id="recipe-search">
               <div class="input-group">
                 <span class="input-group-btn">
-                  <button class="btn btn-info btn-lg" type="button">
+                  <button id="search-button" class="btn btn-info btn-lg" type="button">
                     <span class="glyphicon glyphicon-search"></span>
                   </button>
                 </span>
 				<form method="get" action="https://www.google.com/search">
-                <input type="text" class="form-control input-lg" placeholder="Search for that cheasy goodness!" name="q"/>
+                <input id="search-field" type="text" class="form-control input-lg" placeholder="Search for that cheasy goodness!" name="q"/>
 				</form>
               </div>
             </div>
@@ -73,8 +68,7 @@
       <p>Created By Kevan Nguyen, Juston Lin, David Pham, and Justin Meng.</a></p> 
     </footer>
 
-
-
-
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script> 
 	</body>
 </html>
