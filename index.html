@@ -23,7 +23,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span> 
      				</button>
-      				<a class="navbar-brand" href="#">Cheasy</a>
+      				<a class="navbar-brand" href="index.html">Cheasy</a>
     			</div>
     			<div class="collapse navbar-collapse" id="myNavbar">
       				<ul class="nav navbar-nav navbar-right">
@@ -44,12 +44,14 @@
             <h2>Search for a recipe now!</h2>
             <div id="recipe-search">
               <div class="input-group">
-                <input type="text" class="form-control input-lg" placeholder="Search" />
                 <span class="input-group-btn">
                   <button class="btn btn-info btn-lg" type="button">
                     <span class="glyphicon glyphicon-search"></span>
                   </button>
                 </span>
+				<form method="get" action="https://www.google.com/search">
+                <input type="text" class="form-control input-lg" placeholder="Search for that cheasy goodness!" name="q"/>
+				</form>
               </div>
             </div>
       </div>
