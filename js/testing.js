@@ -18,48 +18,7 @@ var foodDict = {};
 // ingredients.json
 var ingredientsJsonDict;
 
-var food_dict={ 
-"artichoke heart in water": "$5.25",
-"bacon":"$3.99",
-"black olives": "$3.99",
-"black pepper":"$1.49",
-"cabbage":"$1.24",
-"canned navy beans":"$2.43",
-"canned tomato":"$1.74",
-"canned vegetable broth":"$.48",
-"carrots":"$.49",
-"extra virgin olive oil": "$13.99",
-"fresh basil": "$2.25",
-"garlic": "$.99",
-"greens": "$1.00",
-"green beans": "$.74",
-"ground beef":"$4.99",
-"ground pepper": "$1.00",
-"italian bread": "$1.11",
-"ketchup":"$1.99",
-"lemon": "$1.29",
-"olive oil": "$.30", 
-"onion": "$.34",
-"oregano":"$1.99",
-"parmesan rind":"$4.30",
-"parmigiano reggiano":"$3.75",
-"parsley": "$3.22",
-"pasta":"$.99",
-"potato skin": "$.94",
-"red onion": "$1.29",
-"red pepper":"$.99",
-"roasted red peppers": "$3.75",
-"rotini ": "$1.49", 
-"salt":"$2.40",
-"small greens": "$1.75",
-"spaghetti": "$.99",
-"sun dried tomato": "$2.75",
-"tomato":"$.76",
-"white wine":"$14.99",
-"yellow onion":"$.49",
-"zucchini":"$3.49"
-     
-};
+
 
 $(document).ready(function () {
 	var urlQuery= getUrlVars();
@@ -160,19 +119,10 @@ function generateContents(foodName) {
 	$("#food-facts").append('<h2>Ingredients</h2>');
 	var ingredients = food["ingredients"];
 	var ingredientText = '<div class="col-md-5"><ul>'
-		for (ingredientIndex in ingredients) {
-			var currentIngredient = ingredients[ingredientIndex];
-
-
-
-			// If price is undefined, define it.
-			var price = food_dict[currentIngredient["food"]];
-			if (price === undefined || price === null) {
-				price = "$3.26";
-			}
-
-			ingredientText += '<li>' + currentIngredient["quantity"] + " " + currentIngredient["measure"]
-							+ " " + currentIngredient["food"] + " <strong>" + price + "</strong></li></br>";
+	for (ingredientIndex in ingredients) {
+		var currentIngredient = ingredients[ingredientIndex];
+		ingredientText += '<li>' + currentIngredient["quantity"] + " " + currentIngredient["measure"]
+						+ " " + currentIngredient["food"] + "</li></br>";
 	}
 	ingredientText += '</ul></div>';
 	$("#food-facts").append(ingredientText);
@@ -202,7 +152,7 @@ function getPriceIngredient(ingredientDPCI) {
 	    	dataType: 'jsonp',
 	    	success: function(results){
 				finalPrice = results["product_composite_response"]["items"][0]["online_price"]["current_price"];
-				//$("div").append(finalPrice);
+				$("div").append(finalPrice);
 				return finalPrice;
 	    	}
 	});
@@ -211,22 +161,22 @@ function getPriceIngredient(ingredientDPCI) {
 }
 
 
-
-function ingredientToDPCI(ingredient) {
-	var DPCI = "";
-	$.ajax({
-			type: "GET",
-			url: "/ingredients.json",
-			async: false,
-	    	dataType: 'jsonp',
-	    	success: function(results){
-				DPCI = results[ingredient];
-				return finalPrice;
-	    	}
-	});
-
-	return DPCI;
-}
+//
+// function ingredientToDPCI(ingredient) {
+// 	var DPCI = "";
+// 	$.ajax({
+// 			type: "GET",
+// 			url: "/ingredients.json",
+// 			async: false,
+// 	    	dataType: 'jsonp',
+// 	    	success: function(results){
+// 				DPCI = results[ingredient];
+// 				return finalPrice;
+// 	    	}
+// 	});
+//
+// 	return DPCI;
+// }
 
 
 
