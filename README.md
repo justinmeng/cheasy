@@ -2,7 +2,11 @@
 hackingedu
 
 Check out our website: 
+
 http://justinmeng.github.io/cheasy/
+
+and
+
 http://cheasy.club
 
 
