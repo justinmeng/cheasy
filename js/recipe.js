@@ -4,9 +4,19 @@ var appID = "e17dfb00";
 var key = "b494a4fb8b7b191f85128459431bfc6e";
 var sample = "https://api.edamam.com/search?q=chicken&app_id=e17dfb00&app_key=b494a4fb8b7b191f85128459431bfc6e";
 
+
+// Target API Key Info/Variables
+var targetBaseURL = "https://api.target.com";
+var targetGetBase = "/items/v3/";
+var targetKey = "1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb";
+
+
 //var foodList = [];
 // key = foodName, value = recipeObject
 var foodDict = {};
+
+// ingredients.json
+var ingredientsJsonDict;
 
 
 
@@ -20,6 +30,7 @@ $(document).ready(function () {
 
 	// Load all the recipes
 	$.ajax({
+			async: false,
 			url: searchURL,
 	    	dataType: 'jsonp',
 	    	success: function(results){
@@ -27,7 +38,6 @@ $(document).ready(function () {
 	    		var recipes = results["hits"];
 	    		for (recipeIndex in recipes) {
 	    			var food = recipes[recipeIndex]["recipe"];
-					//foodList.push(food);
 					var foodName = food["label"];
 					var foodImage = food["image"];
 					foodDict[foodName] = food;
@@ -39,9 +49,11 @@ $(document).ready(function () {
 	    	}
 	});
 	
+	
+	
+	
 	// Whenever the image recipes are clicked, show the calories mang
 	$(document).on('click', '.recipe', function() {
-		//$("body").append(this.id)
 		createFoodFactsContainer();
 		generateContents(this.id)
 	});
@@ -90,7 +102,7 @@ function generateContents(foodName) {
 	
 	var nameText = '<h1 class="text-center">' + foodName + '</h1>';
 	var foodURL = '<h5 class="text-center"><a target="_blank" href="' + food["url"] + '">' + food["url"] +  '</a></h5>';
-	var imgText = '<img class="text-center pagination-centered" align="middle" style="padding-top:30px;float:left" src="' + food["image"] + '" alt="' + foodName + '">';
+	var imgText = '<img style="padding-top:30px;float:left" src="' + food["image"] + '" alt="' + foodName + '">';
 	
 	// Nutrients
 	var totalNutrients = food["totalNutrients"];
@@ -98,19 +110,75 @@ function generateContents(foodName) {
 	var fat = parseInt(totalNutrients["FAT"]["quantity"]) + totalNutrients["FAT"]["unit"] + " Fat";
 	var carbs = parseInt(totalNutrients["CHOCDF"]["quantity"]) + totalNutrients["CHOCDF"]["unit"] + " Carbohydrates"
 	var protein = parseInt(totalNutrients["PROCNT"]["quantity"]) + totalNutrients["PROCNT"]["unit"] + " Protein";
-	var nutrientText = '<br/><br/><div class="nutrient-font text-center">' + calories + "<br/>" + fat + "<br/>" + carbs + "<br/>" + protein + "<br/></div>";
+	var nutrientText = '<br/><br/><br/><div class="nutrient-font text-center">' + calories + "<br/>" + fat + "<br/>" + carbs + "<br/>" + protein + "<br/></div>";
 	
-	
-	$("#food-facts").append(nameText + foodURL + imgText + nutrientText);
+	$("#food-facts").append(nameText + foodURL + imgText + nutrientText + '<br/><br/><br/><br/><br/><br/><br/>');
 	
 	
 	// Ingredients
+	$("#food-facts").append('<h2>Ingredients</h2>');
+	var ingredients = food["ingredients"];
+	var ingredientText = '<div class="col-md-5"><ul>'
+	for (ingredientIndex in ingredients) {
+		var currentIngredient = ingredients[ingredientIndex];
+		ingredientText += '<li>' + currentIngredient["quantity"] + " " + currentIngredient["measure"]
+						+ " " + currentIngredient["food"] + "</li></br>";
+	}
+	ingredientText += '</ul></div>';
+	$("#food-facts").append(ingredientText);
 	
 	
-	// for (i in foodDict[foodName]) {
-	//$("#food-facts").append(nameText + foodURL + imgText + nutrientText);
-	// }
 }
+
+
+
+
+// Using Target API, retrieve price of ingredient through
+// specified DPCI number
+function getPriceIngredient(ingredientDPCI) {
+	var params = {key: targetKey, product_id: ingredientDPCI.toLowerCase(),
+				  id_type: "dpci", fields: "pricing"};
+	var queries = $.param(params);
+	var searchURL = targetBaseURL + targetGetBase + "?" + queries;
+
+	var finalPrice = "";
+	
+	
+	
+	$.ajax({
+			type: "GET",
+			url: searchURL,
+			async: false,
+	    	dataType: 'jsonp',
+	    	success: function(results){
+				finalPrice = results["product_composite_response"]["items"][0]["online_price"]["current_price"];
+				$("div").append(finalPrice);
+				return finalPrice;
+	    	}
+	});
+	
+	return finalPrice;
+}
+
+
+//
+// function ingredientToDPCI(ingredient) {
+// 	var DPCI = "";
+// 	$.ajax({
+// 			type: "GET",
+// 			url: "/ingredients.json",
+// 			async: false,
+// 	    	dataType: 'jsonp',
+// 	    	success: function(results){
+// 				DPCI = results[ingredient];
+// 				return finalPrice;
+// 	    	}
+// 	});
+//
+// 	return DPCI;
+// }
+
+
 
 
 
