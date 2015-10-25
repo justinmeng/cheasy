@@ -5,12 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Recipe</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap_united.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-			
-		<script type="text/javascript" src="/jquery/custom.js"></script>	
+		<link rel="stylesheet" type="text/css" href="css/styles.css">	
 	</head>
 </head>
 <body class="background-2">
@@ -38,23 +33,17 @@
 		
 		<div id="food-categories" class="container-fluid">
 			<ul class="list-unstyled">
-				<li class="col-md-6"><p id="image-block">Pastas</p><a href="#"><img src="images/pastas.png" alt="Pasta"></a></li>
-				<!-- <a href="#"><img src="images/pastas.png" alt="Pasta"></a> -->
-				<li class="col-md-6"><p id="image-block">Meats</p><a href="#"><img src="images/meats.png" alt="Meats"></a></li>
-				<!-- <a href="#"><img src="images/meats.png" alt="Meats"></a> -->
-				<li class="col-md-6"><p id="image-block">Sandwiches</p><a href="#"><img src="images/sandwiches.png" alt="Sandwiches"></a></li>
-				<!-- <a href="#"><img src="images/sandwiches.png" alt="Sandwiches"></a> -->
-				<li class="col-md-6"><p id="image-block">Vegetarian</p><a href="#"><img src="images/vegetarian.png" alt="Vegetarian"></a></li>
-				<!-- <a href="#"><img src="images/vegetarian.png" alt="Vegetarian"></a> -->
+				<li class="col-md-6"><p id="image-block">Pastas</p><a href="Recipes.html?category=pastas" id="pastas" class="category-button"><img src="images/pastas.png" alt="Pasta"></a></li>
+				<li class="col-md-6"><p id="image-block">Meats</p><a href="Recipes.html?category=meats" id="meat" class="category-button"><img src="images/meats.png" alt="Meats"></a></li>
+				<li class="col-md-6"><p id="image-block">Sandwiches</p><a href="Recipes.html?category=sandwiches" id="sandwiches" class="category-button"><img src="images/sandwiches.png" alt="Sandwiches"></a></li>
+				<li class="col-md-6"><p id="image-block">Vegetarian</p><a href="Recipes.html?category=vegetarian" id="vegetarian" class="category-button"><img src="images/vegetarian.png" alt="Vegetarian"></a></li>
 			</ul>
 		</div>
 
 
 
 
-    
-
-
-
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/recipe.js"></script>
 	</body>
 </html>
