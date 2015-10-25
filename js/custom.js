@@ -1,4 +1,5 @@
 
+
 $(document).ready(function () {
 
 	// Applies the search button functionality
