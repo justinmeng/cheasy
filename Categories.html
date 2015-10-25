@@ -3,14 +3,12 @@
 	<head>
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>FAQ</title>
+		<title>Recipe</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap_united.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">	
 	</head>
 </head>
-<body>
-	
-	
+<body class="background-2">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default">
   	   <div class="container">
@@ -31,33 +29,21 @@
     			</div>
   			</div>
 		</nav>
-
-		<!-- "SOON" CONTAINER -->
-		<div class="container-fluid background-1 text-center">
-      <!-- SEARCH FIELD -->
-      <div class="container pagination-centered">
-            <img src="images/logo.png" alt="Cheasy">
-			<h1> Coming Soon! </h1>
-      </div>
-	  </div>
-
-
-    <!-- ABOUT/INFO CONTAINER -->
-    <div class="container-fluid background-2 text-center">
-      <h3 class="margin">What do we do?</h3>
-      <p>We're dedicated to finding cheap food at your Local Target.</p>
-	  <p> Write in a dish inside the search bar, and it will pull out the </p>
-	  <p>prices of the ingredients  and the location of the closest Target.</p>
-    </div>
+		
+		
+		<div id="food-categories" class="container-fluid">
+			<ul class="list-unstyled">
+				<li class="col-md-6"><p id="image-block">Pastas</p><a href="Recipes.html?category=pastas" id="pastas" class="category-button"><img src="images/pastas.png" alt="Pasta"></a></li>
+				<li class="col-md-6"><p id="image-block">Meats</p><a href="Recipes.html?category=meats" id="meat" class="category-button"><img src="images/meats.png" alt="Meats"></a></li>
+				<li class="col-md-6"><p id="image-block">Sandwiches</p><a href="Recipes.html?category=sandwiches" id="sandwiches" class="category-button"><img src="images/sandwiches.png" alt="Sandwiches"></a></li>
+				<li class="col-md-6"><p id="image-block">Vegetarian</p><a href="Recipes.html?category=vegetarian" id="vegetarian" class="category-button"><img src="images/vegetarian.png" alt="Vegetarian"></a></li>
+			</ul>
+		</div>
 
 
-    <!-- FOOTER -->
-    <footer class="container-fluid background-3 text-center">
-      <p>Created By Kevan Nguyen, Juston Lin, David Pham, and Justin Meng.</a></p> 
-    </footer>
 
 
 		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/recipe.js"></script>
 	</body>
 </html>

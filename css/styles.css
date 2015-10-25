@@ -38,8 +38,6 @@
 
 
 
-
-
 #recipe-search{
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -72,3 +70,14 @@
 #recipe-search .glyphicon-search{
     font-size: 23px;
 }
+
+
+
+#food-categories {
+	font-size: 40px !important;
+}
+
+#image-block {
+	display: block;
+}
+

@@ -1,0 +1,325 @@
+{
+
+"milk" : "284-02-2664",
+
+"whole milk" : "284-02-2663",
+
+"cheddar cheese" : "284-11-0086",
+"cheddarcheese" : "284-11-0086",
+"mexican cheese" : "284-11-0085",
+"mexicancheese" : "284-11-0085",
+"mexicanfourcheese" : "284-11-0085",
+"mexican four cheese" : "284-11-0085",
+"mexican style cheese" : "284-11-0085",
+"mexican-style-cheese" : "284-11-0085",
+"mexican-style cheese" : "284-11-0085",
+"mozzerella cheese" : "284-11-1231",
+"mozzerellacheese" : "284-11-1231",
+"pepperjack cheese" : "284-11-1117",
+"pepper-jack cheese" : "284-11-1117",
+"pepper jack cheese" : "284-11-1117",
+"pepper-jack-cheese" : "284-11-1117",
+"provolone cheese" : "284-11-0226",
+"provolone" : "284-11-0226",
+
+"parmesan cheese" : "284-11-0516",
+"parmesancheese" : "284-11-0516",
+
+"sour cream" : "284-09-0009",
+"sourcream" : "284-09-0009",
+
+"cream cheese" : "284-14-0037",
+"creamcheese" : "284-14-0037",
+
+"eggs" : "284-03-0001",
+"egg" : "284-03-0001",
+"large egg" : "284-03-0001",
+"largeegg" : "284-03-0001",
+"large eggs" : "284-03-0001",
+"largeeggs" : "284-03-0001",
+
+"almond milk" : "284-06-0073",
+"almondmilk" : "284-06-0073",
+
+"butter" : "284-13-0040",
+"butters" : "284-13-0040",
+
+"strawberries" : "266-08-0005",
+"strawberry" : "266-08-0005",
+"blueberries" : "266-08-4240",
+"blue berries" : "266-08-4240",
+"blueberry" : "266-08-4240",
+"blackberries" : "266-08-5239",
+"black berries" : "266-08-5239",
+"blackberry" : "266-08-5239",
+
+
+"lettuce" : "211-21-4061",
+"romaine" : "211-21-0094",
+
+"bell pepper" : "211-21-9088",
+"yellow bell pepper" : "211-21-1680",
+"red bell pepper" : "211-21-9088",
+"orange bell pepper" : "211-21-4682",
+"green bell pepper" : "211-21-0030",
+
+"russet potatoes" : "211-17-4725",
+"potatoes" : "211-17-4725",
+"potato" : "211-17-4725",
+
+"avocado" : "211-50-0036",
+"avocados" : "211-50-0036",
+"avocadoes" : "211-50-0036",
+
+"tomato" : "224-12-4664",
+"tomatoes" : "224-12-4664",
+"red tomato" : "224-12-4664",
+"red tomatoes" : "224-12-4664",
+"redtomato" : "224-12-4664",
+"redtomatoes" : "224-12-4664",
+
+"sweet potato" : "224-17-4091",
+"sweet potatoes" : "224-17-4091",
+"sweetpotato" : "224-17-4091",
+"sweetpotatoes" : "224-17-4091",
+"sweet potato yams" : "224-17-4091",
+"sweet potato yam" : "224-17-4091",
+
+"onion" : "224-17-4663",
+"onions" : "224-17-4663",
+"white onion" : "224-17-4663",
+"white onions" : "224-17-4663",
+
+"parsley" : "224-21-4899",
+
+"artichoke" : "224-21-4084",
+
+"broccoli" : "224-21-3082",
+
+"leek" : "224-21-4629",
+"leeks" : "224-21-4629",
+
+"cilantro" : "224-21-4889",
+"cilantros" : "224-21-4889",
+
+"spinach" : "224-21-4090",
+
+"asparagus" : "224-21-4080",
+
+"celery" : "211-21-4070",
+"celeries" : "211-21-4070",
+
+"cauliflower" : "211-21-4079",
+"cauliflowers" : "211-21-4079",
+
+"kale" : "224-21-4999",
+"kales" : "224-21-4999",
+
+"green onion" : "211-21-0044",
+"green onions" : "211-21-0044",
+"greenonion" : "211-21-0044",
+"greenonions" : "211-21-0044",
+
+"cucumber" : "211-21-9062",
+"cucumbers" : "211-21-9062",
+
+"radish" : "211-21-0085",
+"radishes" : "211-21-0085",
+
+"snap pea" : "211-14-0318",
+"snap peas" : "211-14-0318",
+
+"snow pea" : "211-14-0337",
+"snow peas" : "211-14-0337",
+
+"zucchinis" : "211-21-0089",
+"zucchini" : "211-21-0089",
+
+"chicken" : "226-10-0006",
+"chickens" : "226-10-0006",
+"chicken thighs" : "226-10-0011",
+"chicken thigh" : "226-10-0011",
+"chicken breasts" : "226-10-0006",
+"chicken boneless breasts" : "226-10-0006",
+"chickenbreasts" : "226-10-0006",
+"chicken skinless breasts" : "226-10-0006",
+"chicken wings" : "268-05-0020",
+"chicken drumsticks" : "268-05-0019",
+"chicken drum sticks" : "268-05-0019",
+"chicken nuggets" : "210-05-0127",
+"chicken nugets" : "210-05-0127",
+
+"ham" : "268-08-0004",
+"sliced ham" : "268-08-0004",
+"honey ham" : "268-08-0004",
+"honey smoked ham" : "268-08-0004",
+"smoked ham" : "268-08-0004",
+
+"ground beef" : "268-02-4009",
+"beef" : "268-02-4009",
+
+"hot dogs" : "210-13-0300",
+"hot dog" : "210-13-0300",
+"hotdogs" : "210-13-0300",
+
+"white turkey" : "210-01-0732",
+"turkey" : "210-01-0732",
+"oscar mayer white turkey" : "210-01-0732",
+"oscar white turkey" : "210-01-0732",
+"smoked white turkey" : "210-01-0732",
+"turkey breasts" : "210-01-0732",
+"turkey breast" : "210-01-0732",
+
+"pork" : "268-03-0001",
+"ground pork" : "268-03-0001",
+"groundpork" : "268-03-0001",
+
+"tilapia fillet" : "268-07-0384",
+"tilapia" : "268-07-0384",
+"tillapia" : "268-07-0384",
+
+"steak" : "226-11-1158",
+
+"won ton" : "211-18-0022", 
+"won tons" : "211-18-0022", 
+"wonton" : "211-18-0022", 
+"wontons" : "211-18-0022", 
+
+"tofu" : "211-18-0019", 
+
+"pepperoni" : "212-22-0195",
+"peperoni" : "212-22-0195",
+
+"bacon" : "210-10-1341",
+"sausage" : "210-12-0830",
+"sausages" : "210-12-0830",
+
+"salami" : "210-01-0431",
+"salame" : "210-01-0431",
+
+"bologna" : "210-01-0169",
+"beef bologna" : "210-01-0157",
+"turkey bologna" : "210-01-0169",
+
+"bread" : "261-01-0398",
+"breads" : "261-01-0398",
+"oat bread" : "261-01-0430",
+"multi grain bread" : "261-01-1340",
+"multigrain bread" : "261-01-1340",
+"white bread" : "261-01-1826",
+"wheat bread" : "261-01-2739",
+"whole wheat bread" : "261-01-2739",
+"sourdough bread" : "261-01-0521",
+"hot dog buns" : "261-01-0029",
+"hotdog buns" : "261-01-0029",
+"hotdog bun" : "261-01-0029",
+"hot dog bun" : "261-01-0029",
+
+
+"bagels" : "261-01-0021",
+"bagel" : "261-01-0021",
+"tortillas" : "212-26-0843", 
+"tortilas" : "212-26-0843",
+"tostadas" : "212-26-0391",
+
+"blackberry jam" : "212-02-0484",
+"black berry jam" : "212-02-0484",
+
+"basil" : "212-26-2746",
+
+"honey mustard" : "212-04-0579",
+"honeymustard" : "212-04-0579",
+
+"white vinegar" : "212-08-1315",
+"whitevinegar" : "212-08-1315",
+"distilled white vinegar" : "212-08-1315",
+
+"chicken seasoning" : "261-02-0308",
+
+"peanut butter" : "212-02-0039",
+"peanutbutter" : "212-02-0039",
+
+"coconut oil" : "261-03-0123",
+"coconutoil" : "261-03-0123",
+
+"nutella" :"212-02-0195",
+
+"olive oil" : "261-03-0156",
+"extra virgin olive oil" : "261-03-0156",
+"virgin olive oil" : "261-03-0156",
+
+"vegetable oil" : "261-03-0038",
+"vegetableoil" : "261-03-0038",
+
+"ranch" : "211-01-0007",
+
+"cayenne" : "070-11-1123",
+"cayenne pepper" : "070-11-1123",
+
+"rosemary" : "070-11-0446",
+
+"saffron" : "070-11-0382",
+
+"paprika" : "070-11-0390",
+
+"thyme" : "070-11-0389",
+
+"curry powder" : "070-11-0408",
+
+"nutmeg" : "070-11-0410",
+
+"ketchup" : "212-04-0165",
+"tomato ketchup" : "212-04-0165",
+
+"mustard" : "212-04-0179",
+
+"horseradish" : "212-04-4400",
+
+"soy sauce" : "212-30-0125",
+"soysauce" : "212-30-0125",
+
+"black pepper" : "261-02-0835",
+"pepper" : "261-02-0835",
+"salt" : "261-02-0716",
+"iodized salt" : "261-02-0716",
+"pam spray" : "261-03-0049",
+"pam cooking spray" : "261-03-0049",
+"lemon pepper" : "261-02-0350",
+"onion powder" : "261-02-0213",
+"cumin" : "261-02-1240",
+"ground cumin" : "261-02-1240",
+"cinnamon sugar" : "261-02-1087",
+"sugar" : "261-06-0319",
+"garlic salt" : "261-02-1033",
+"thousand island" : "212-08-0856",
+"thousand island dressing" : "212-08-0856",
+"thousand island sauce" : "212-08-0856",
+"caesar dressing" : "212-08-0274",
+"honey" : "212-02-0181",
+"sweet relish" : "212-06-0105",
+"banana pepper" : "212-06-0117",
+"banana peppers" : "212-06-0117",
+"tarragon" : "261-02-0610",
+"tarragons" : "261-02-0610",
+"tarragon leaves" : "261-02-0610",
+"garlic powder" : "261-02-0558",
+"ground cinnamon" : "261-02-0563",
+"crushed red pepper" : "261-02-0547",
+"mayonnaise" : "212-08-0429",
+"mayonaise" : "212-08-0429",
+
+"fettuccine" : "212-38-0582",
+"fetuccine" : "212-38-0582",
+"white rice" : "212-34-0114",
+"spaghetti" : "212-38-0315",
+"spaghetti noodles" : "212-38-0315",
+"macaroni and cheese" : "212-14-0319",
+"alfredo pasta sauce" : "212-40-0440",
+"alfredo sauce" : "212-40-0440",
+"chicken alfredo sauce" : "212-40-0440",
+"chicken alfredo pasta sauce" : "212-40-0440",
+"pasta sauce" : "212-40-0094",
+"ragu sauce" : "212-40-0094",
+"ragu pasta sauce" : "212-40-0094",
+"ragu" : "212-40-0094"
+}
